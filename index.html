@@ -9,10 +9,13 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body class="container-fluid">
-
+  
+  <!-- Navbar -->
   <div class="pos-f-t">
     <nav class="navbar navbar-dark bg-primary">
 
@@ -33,39 +36,103 @@
               </button>
             </div>
             <div class="modal-body">
-              <a href="https://www.linkedin.com/in/macc-pholsina/" class="text-white">LinkedIn</a>
-              <a href="https://github.com/maccode421" class="text-white">GitHub</a>
+              <p>Hello World!</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <div class="mx-auto" style="width: 400px;">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/macc-pholsina/" target="_blank" class="btn-social btn-outline">
+                <i class="fa fa-fw fa-linkedin"></i>LinkedIn
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/maccode421" target="_blank" class="btn-social btn-outline">
+                <i class="fa fa-fw fa-twitter"></i>Twitter
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/maccode421" target="_blank" class="btn-social btn-outline">
+                <i class="fa fa-fw fa-github"></i>GitHub
+                </a>
+              </li>
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
               <!--<button type="button" class="btn btn-primary">Save changes</button>-->
             </div>
           </div>
         </div>
       </div>
+
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary"><a href="#" class="text-white">About</a></button>
-        <button type="button" class="btn btn-primary"><a href="#" class="text-white">Portfolio</a></button>
-        <button type="button" class="btn btn-primary"><a href="#" class="text-white">Contact</a></button>
+        <button type="button" class="btn btn-primary"><a href="#about" class="text-white">About</a></button>
+        <button type="button" class="btn btn-primary"><a href="#portfolio" class="text-white">Portfolio</a></button>
+        <button type="button" class="btn btn-primary"><a href="#contact" class="text-white">Contact</a></button>
+      </div>
+      <div class="dropdown show">
+        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown link
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
       </div>
     </nav>
   </div>
 
-  <div class="container">
-    <section>
-      <h4>About</h4>
-    </section>
-  </div>
+  <!-- About Section-->
+  <section>
+    <div class="container">
+      <h4 id="about">About</h4>
+      <p>Hello World! Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+        luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis
+        in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam
+        nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+    </div>
+  </section>
+  
+  <!-- Portfolio Section -->
+  <section>
+    <div class="container">
+      <h4 id="portfolio">Portfolio</h4>
+      <div class="row">
+        <div class="card col-sm" style="width: 20rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
 
-  <div class="container">
-    <section>
-      <h4>Portfolio</h4>
-    </section>
-  </div>
+        <div class="card col-sm" style="width: 20rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
 
-  <div class="container">
-    <section>
-      <h4>Contact</h4>
+        <div class="card col-sm" style="width: 20rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="container">
+      <h4 id="contact">Contact</h4>
       <form class="container" id="needs-validation" novalidate>
         <div class="row">
           <div class="col-md-6 mb-3">
@@ -102,13 +169,13 @@
         </div>
         <button class="btn btn-primary" type="submit">Submit form</button>
       </form>
-    </section>
-  </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer class="container">
     <p>Posted by: Macc Pholsina</p>
-    <p>Contact information: <a href="mailto:someone@example.com">
-  someone@example.com</a>.</p>
+    <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a></p>
   </footer>
 
   <!-- Optional JavaScript -->
