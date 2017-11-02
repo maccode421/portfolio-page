@@ -11,76 +11,77 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <!-- Font Awesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body class="container-fluid">
-  
-  <!-- Navbar -->
-  <div class="pos-f-t">
-    <nav class="navbar navbar-dark bg-primary">
 
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portfolioModal">
+  <!-- Navbar -->
+  <div class="container pos-f-t">
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="navbar-header">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portfolioModal">
         <i class="fa fa-address-card" aria-hidden="true"><h4><strong>Macc Pholsina</strong></h4></i>
       </button>
 
-      <!-- Modal -->
-      <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKa_nQLIXixeEMKk8a5dzNc0wQhNj4FQhS6qYvSG6oHKB39e38ig" alt="..." class="rounded-circle">
-              <span class="text-muted"><strong>Maccode421</strong><br>Full Stack Web Developer</span>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <!-- Modal -->
+        <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKa_nQLIXixeEMKk8a5dzNc0wQhNj4FQhS6qYvSG6oHKB39e38ig" alt="..." class="rounded-circle">
+                <span class="text-muted"><strong>Maccode421</strong><br>Full Stack Web Developer</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </div>
-            <div class="modal-body">
-              <p>You must focus GrassHopper!</p>
-            </div>
-            <div class="modal-footer">
-              <div class="mx-auto" style="width: 400px;">
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/macc-pholsina/" target="_blank" class="btn-social btn-outline">
+              </div>
+              <div class="modal-body">
+                <p>You must focus GrassHopper!</p>
+              </div>
+              <div class="modal-footer">
+                <div class="mx-auto" style="width: 400px;">
+                  <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/macc-pholsina/" target="_blank" class="btn-social btn-outline">
                 <i class="fa fa-fw fa-linkedin"></i>LinkedIn
                 </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://twitter.com/maccode421" target="_blank" class="btn-social btn-outline">
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://twitter.com/maccode421" target="_blank" class="btn-social btn-outline">
                 <i class="fa fa-fw fa-twitter"></i>Twitter
                 </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/maccode421" target="_blank" class="btn-social btn-outline">
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://github.com/maccode421" target="_blank" class="btn-social btn-outline">
                 <i class="fa fa-fw fa-github"></i>GitHub
                 </a>
-              </li>
+                  </li>
+                </div>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
               </div>
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-              <!--<button type="button" class="btn btn-primary">Save changes</button>-->
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Navbar Menu-->
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary"><a href="#about" class="text-white">About</a></button>
-        <button type="button" class="btn btn-primary"><a href="#portfolio" class="text-white">Portfolio</a></button>
-        <button type="button" class="btn btn-primary"><a href="#contact" class="text-white">Contact</a></button>
-      </div>
-      
-      <!-- Dropdown Menu -->
-      <div class="dropdown show">
-        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <!-- Navbar Menu-->
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary"><a href="#about" class="text-white">About</a></button>
+          <button type="button" class="btn btn-primary"><a href="#portfolio" class="text-white">Portfolio</a></button>
+          <button type="button" class="btn btn-primary"><a href="#contact" class="text-white">Contact</a></button>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown show">
+          <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Dropdown link
         </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="https://preview.c9users.io/maccode421/tribute-page/tribute-page/index.html" target="_blank">Tribute Page</a>
-          <a class="dropdown-item" href="#ticTac">TicTacToesy</a>
-          <a class="dropdown-item" href="#autoLog">AutoLogInit</a>
-          <a class="dropdown-item" href="#foodBucket">FoodBucket</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="https://preview.c9users.io/maccode421/tribute-page/tribute-page/index.html" target="_blank">Tribute Page</a>
+            <a class="dropdown-item" href="#ticTac">TicTacToesy</a>
+            <a class="dropdown-item" href="#autoLog">AutoLogInit</a>
+            <a class="dropdown-item" href="#foodBucket">FoodBucket</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -98,13 +99,13 @@
         nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
     </div>
   </section>
-  
+
   <!-- Portfolio Section -->
   <section>
     <div class="container">
       <h4 id="portfolio"><strong>Portfolio</strong></h4>
       <div class="row">
-        
+
         <div class="card col-sm" id="ticTac" style="width: 20rem;">
           <img class="card-img-top" src="http://csharpcorner.mindcrackerinc.netdna-cdn.com/UploadFile/75a48f/tic-tac-toe-game-in-C-Sharp/Images/TicTacToe_HD_iTunesArtwork.png" alt="Card image cap">
           <div class="card-body">
@@ -131,7 +132,7 @@
             <a href="https://github.com/Team-Agile2" class="btn btn-primary" target="_blank">Go somewhere</a>
           </div>
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -180,10 +181,12 @@
   </section>
 
   <!-- Footer -->
-  <footer class="container">
-    <p>Posted by: Macc Pholsina</p>
-    <i class="fa fa-copyright" aria-hidden="true">2017</i>
-  </footer>
+  <div class="container">
+    <footer>
+      <p>Posted by: Macc Pholsina</p>
+      <i class="fa fa-copyright" aria-hidden="true">2017</i>
+    </footer>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
