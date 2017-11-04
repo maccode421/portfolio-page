@@ -3,6 +3,10 @@
     width: 10vw;
 }
 
+.section {
+    text-align: center;
+}
+
 #about {
     border-bottom: solid blue;
     padding-top: 2%;
