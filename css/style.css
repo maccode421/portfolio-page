@@ -49,6 +49,8 @@
 #portfolio {
     /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9a9KeEPGyupYuCAap-xmC-1UxyQTgdmbrgr8rPvQsZPW4dY4h_A");*/
     /*background-size: cover;*/
+    border-radius: 15%;
+    border-top: solid blue;
     padding-top: 1%;
 }
 
