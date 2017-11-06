@@ -55,14 +55,14 @@
     /*padding: 2% 0;*/
 }
 
-#div3 {
+#turtle {
     position: relative;
-    -webkit-animation: mymove 11s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 11s infinite;
+    -webkit-animation: turtle 21s infinite; /* Safari 4.0 - 8.0 */
+    animation: turtle 21s infinite;
     animation-timing-function: linear;
 }
 
-@keyframes mymove {
+@keyframes turtle {
     from {left: -400px;}
     to {left: 100%;}
 }
