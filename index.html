@@ -19,16 +19,10 @@
 
   <!-- Navbar -->
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <img src="http://www.futuresobright.com/images/app-content-images/1355567979_taurus1.jpg" class="rounded-circle" id="navImage"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-      <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portfolioModal">
-          <i class="fa fa-address-card" aria-hidden="true"><h4><strong>M V P</strong></h4></i>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" id="modalButton" data-toggle="modal" data-target="#portfolioModal">
+          <img src="http://www.futuresobright.com/images/app-content-images/1355567979_taurus1.jpg" class="rounded-circle" id="navImage"><h4><strong>M V P</strong></h4></a>
         </button>
 
         <!-- Modal -->
@@ -68,16 +62,21 @@
             </div>
           </div>
         </div>
-        
+      <!-- Toggle Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
         <!-- Navbar Menu-->
-        <div class="btn-group collapse navbar-collapse" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-primary"><a href="#about" class="text-white">About</a></button>
-          <button type="button" class="btn btn-primary"><a href="#portfolio" class="text-white">Portfolio</a></button>
-          <button type="button" class="btn btn-primary"><a href="#contact" class="text-white">Contact</a></button>
+        <div class="btn-group collapse navbar-collapse" id="navMenu" role="group" aria-label="Basic example">
+          <button type="button" class="menuBtn btn btn-primary"><a href="#about" class="text-white">About</a></button>
+          <button type="button" class="menuBtn btn btn-primary"><a href="#portfolio" class="text-white">Portfolio</a></button>
+          <button type="button" class="menuBtn btn btn-primary"><a href="#contact" class="text-white">Contact</a></button>
 
           <!-- Dropdown Menu -->
           <div class="dropdown show">
-            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="menuBtn btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Quick links
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -96,42 +95,39 @@
   <div class="container" id="about">
     <h4 class="section"><strong>About</strong></h4>
     <!--<img src="..." class="img-fluid" alt="Responsive image">-->
-    <p>Hello World! Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-      ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-      zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui
-      facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus
-      parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+    <p>Hello World! "To infinity and beyond" and "up up and away" as this new career path into Web Development takes off. Where will it take me? They say, "the skies are the limits" but I like to think it's space, the stars and beyond. 
+      I am an individual that is open minded to life and all that circumferences it. Father time and the future will be the story teller of my epic journey.</p>
   </div>
 
   <!-- Portfolio Section -->
   <div class="container" id="portfolio">
     <h4 class="section"><strong>Portfolio</strong></h4>
+    
     <div class="row">
-
       <div class="card col-sm" id="ticTac" style="width: 20rem;">
-        <img class="card-img-top" src="http://csharpcorner.mindcrackerinc.netdna-cdn.com/UploadFile/75a48f/tic-tac-toe-game-in-C-Sharp/Images/TicTacToe_HD_iTunesArtwork.png" alt="Card image cap">
+        <a href="https://maccode421.github.io/tic-tac-toe-game/" target="_blank">
+          <img class="card-img-top" src="http://csharpcorner.mindcrackerinc.netdna-cdn.com/UploadFile/75a48f/tic-tac-toe-game-in-C-Sharp/Images/TicTacToe_HD_iTunesArtwork.png" alt="Card image cap"></a>
         <div class="card-body">
           <h4 class="card-title">TicTacToesy</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="https://maccode421.github.io/tic-tac-toe-game/" class="btn btn-primary" target="_blank">Go somewhere</a>
+          <p class="card-text">A simple single player tic tac toe game.</p>
         </div>
       </div>
 
       <div class="card col-sm" id="autoLog" style="width: 20rem;">
-        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEGNiac_e2gvfBZc_HGmynRH2KJUCjwM-C4qGW6io9fg3YIJXB" alt="Card image cap">
+        <a href="https://maccode421.github.io/capstone-project-front-end/" target="_blank">
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEGNiac_e2gvfBZc_HGmynRH2KJUCjwM-C4qGW6io9fg3YIJXB" alt="Card image cap"></a>
         <div class="card-body">
           <h4 class="card-title">AutoLogInit</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="https://maccode421.github.io/capstone-project-front-end/" class="btn btn-primary" target="_blank">Go somewhere</a>
+          <p class="card-text">Application for keeping track of mileage, maintenance, gas cost, repair cost and upload image of receipts.</p>
         </div>
       </div>
 
       <div class="card col-sm" id="foodBucket" style="width: 20rem;">
-        <img class="card-img-top" src="http://www.freeiconspng.com/uploads/restaurant-icon-png-7.png" alt="Card image cap">
+        <a href="https://github.com/Team-Agile2" target="_blank">
+          <img class="card-img-top" src="http://www.freeiconspng.com/uploads/restaurant-icon-png-7.png" alt="Card image cap"></a>
         <div class="card-body">
           <h4 class="card-title">FoodBucket</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="https://github.com/Team-Agile2" class="btn btn-primary" target="_blank">Go somewhere</a>
+          <p class="card-text">Application that uses geo-location to find local restaurants and eateries for foodies and those looking to venture to new places to eat.</p>
         </div>
       </div>
     </div>
@@ -174,15 +170,16 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-primary" type="submit">Submit form</button>
+      <button class="menuBtn btn btn-primary" type="submit">Submit form</button>
     </form>
   </div>
+  
+  <div id="div3"><img src="http://ambientbluecreative.com/animals/Animal-Info/Animal-InfoBooks/Sea-Turtles/_images/flatback-sea-turtle.png"></div>
 
   <!-- Footer -->
-  <div class="container bg-primary" id="footer">
-    <footer>
-      <p>Posted by: Macc Pholsina</p>
-      <i class="fa fa-copyright" aria-hidden="true">2017</i>
+  <div class="container">
+    <footer class="text-light bg-primary" id="footer">
+      Copyright <i class="fa fa-copyright" aria-hidden="true"> Macc Pholsina 2017</i>
     </footer>
   </div>
 
