@@ -14,10 +14,15 @@
     justify-content: flex-end;
 }
 
-/*audio {*/
-/*    position: relative;*/
-/*    left: 7%;*/
-/*}*/
+#audio {
+    /*position: relative;*/
+    /*left: 7%;*/
+    text-align: right;
+}
+
+#video {
+    text-align: center;
+}
 
 #iframe {
     text-align: center
