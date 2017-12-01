@@ -55,7 +55,7 @@
     /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9a9KeEPGyupYuCAap-xmC-1UxyQTgdmbrgr8rPvQsZPW4dY4h_A");*/
     /*background-size: cover;*/
     border-radius: 15%;
-    border-top: solid blue;
+    /*border-top: solid blue;*/
     padding-top: 1%;
 }
 
@@ -89,14 +89,14 @@
     to {left: 100%;}
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     body {
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9a9KeEPGyupYuCAap-xmC-1UxyQTgdmbrgr8rPvQsZPW4dY4h_A");
         background-size: cover;
     }
 }
     
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
     #about {
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9a9KeEPGyupYuCAap-xmC-1UxyQTgdmbrgr8rPvQsZPW4dY4h_A");
         background-size: cover;
